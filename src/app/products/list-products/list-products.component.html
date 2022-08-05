@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="card shadow mb-4">
+        <table class="table table-striped">
+            <tr class="bg-primary text-white"><th>ID</th><th>Name</th><th>Description</th><th>Prix</th><th>Categorie</th><th>--</th><th>Action</th><th>--</th></tr>
+            <thead>
+                <tr>
+                    <th>Liste des produits</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let product of products">
+                <tr>
+                    <td>{{product.id}}</td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.description}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.categorie}}</td>
+                   <!-- <td><a class="btn btn-outline-danger" (click)="deleteVisite(visite)">Supprimer</a></td> -->
+                    <td>
+                        <span class="material-icons bg-primary text-white p-2 rounded-circle btn" [routerLink]="['/editProduct', product.id]">
+                        edit
+                      </span>
+                    </td>
+                    <td>
+                        <span class="material-icons bg-primary text-white p-2 rounded-circle btn" [routerLink]="['/product', product.id]">
+                        keyboard_arrow_right
+                      </span>
+                    </td>
+                    <td>
+                        <span class="material-icons bg-primary text-white p-2 rounded-circle btn" (click)="supprimerProduct(product)">
+                            delete
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

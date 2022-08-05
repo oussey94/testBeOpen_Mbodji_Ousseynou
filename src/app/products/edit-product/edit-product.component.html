@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="card-content shadow mb-4">
+        <div class="card-header text-center bg-primary text-white text-uppercase">
+            Modifier un produit
+        </div>
+      
+    <div class="card-body">
+    <form novalidate (ngSubmit)="updateProduct()" [formGroup]="productForm" >
+
+        <div class="form-group row mb-2">
+            <label for="productNameId" class="col-md-2 col-form-label" >
+                Name
+            </label>
+            <div class="col-md-8">
+                <input 
+                 id="productNameId"
+                 type="text" 
+                 class="form-control"
+                 formControlName="name"
+                 placeholder="le nom du produit">
+            </div>
+            
+        </div>
+
+        <div class="form-group row mb-2">
+            <label for="descriptionId" class="col-md-2 col-form-label" >
+                Description
+            </label>
+            <div class="col-md-8">
+                <input 
+                 id="descriptionId"
+                 type="text" 
+                 class="form-control"
+                 formControlName="description"
+                 placeholder="la description du produit">
+            </div>
+            
+        </div>
+
+        <div class="form-group row mb-2">
+            <label for="priceId" class="col-md-2 col-form-label" >
+                Prix
+            </label>
+            <div class="col-md-8">
+                <input 
+                 id="priceId"
+                 type="number" 
+                 class="form-control"
+                 formControlName="price"
+                 placeholder="le prix du produit">
+            </div>
+            
+        </div>
+
+        <div class="form-group row mb-2">
+            <label for="categorieId" class="col-md-2 col-form-label" >
+                Categorie
+            </label>
+            <div class="col-md-8">
+                <input 
+                 id="categorieId"
+                 type="text" 
+                 class="form-control"
+                 formControlName="categorie"
+                 placeholder="le categorie du produit">
+            </div>
+            
+        </div>
+
+        <div class="text-lg-right mt-2">
+                <button type="submit"  class="btn btn-outline-primary mr-3">sauvegarder</button>
+                <button class="btn btn-outline-secondary ml-3" type="button" routerLink="/produits">annuler</button>
+        </div>
+    </form>
+</div>
+</div>
+</div>
