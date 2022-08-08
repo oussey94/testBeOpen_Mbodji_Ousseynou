@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # beOpenTestBack
 Nous utiliserons Gin et GORM  dans cette application
 Gin : Il s'agit d'un framework Web écrit en Golang que nous utiliserons pour router et servir les requêtes via HTTP. 
 GORM : Il s'agit de la bibliothèque ORM (Object Relational Mapping) pour Golang.
 =======
+=======
+>>>>>>> 6b14759f56e8288d20ff510fdf81581feef283be
 # BeOpenTestFront
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
@@ -31,4 +34,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<<<<<<< HEAD
 >>>>>>> initial commit
+=======
+>>>>>>> 6b14759f56e8288d20ff510fdf81581feef283be
